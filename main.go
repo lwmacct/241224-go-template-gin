@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/lwmacct/241224-go-template-mini/app"
-	"github.com/lwmacct/241224-go-template-mini/app/start"
-	"github.com/lwmacct/241224-go-template-mini/app/test"
-	"github.com/lwmacct/241224-go-template-mini/app/version"
+	"github.com/lwmacct/241224-go-template-gin/app"
+	"github.com/lwmacct/241224-go-template-gin/app/api"
+	"github.com/lwmacct/241224-go-template-gin/app/start"
+	"github.com/lwmacct/241224-go-template-gin/app/test"
+	"github.com/lwmacct/241224-go-template-gin/app/version"
 	"github.com/lwmacct/241224-go-template-pkgs/m_cmd"
 	"github.com/lwmacct/241224-go-template-pkgs/m_log"
 )
@@ -21,6 +22,7 @@ func main() {
 		// 命令行参数
 		mc.AddCobra(version.Cmd().Cobra())
 		mc.AddCobra(start.Cmd().Cobra())
+		mc.AddCobra(api.Cmd().Cobra())
 
 		// 开发环境中的测试命令
 		if os.Getenv("ACF_SHOW_TEST") == "1" {

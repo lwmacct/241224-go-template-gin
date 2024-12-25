@@ -19,6 +19,6 @@ AppVersion:   v0.0.1
 Go Version:   go1.23.4
 Git Commit:   d8cd98f
 Build Time:   2024-12-24 20:06:49 CST
-AppProject:   241224-go-template-mini
+AppProject:   241224-go-template-gin
 Developer :   https://yuque.com/lwmacct
 ```

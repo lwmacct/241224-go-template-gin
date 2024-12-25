@@ -1,4 +1,4 @@
-module github.com/lwmacct/241224-go-template-mini
+module github.com/lwmacct/241224-go-template-gin
 
 go 1.23.4
 

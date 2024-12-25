@@ -32,3 +32,12 @@ tasks:
         export ACF_SHOW_TEST=1
         env | grep ACF_
         echo "Stdin" | {{.GO_APP_PATH}} start run
+
+  api:run:
+    deps:
+      - task: build:bin
+    cmds:
+      - |
+        export ACF_SHOW_TEST=1
+        env | grep ACF_
+        echo "Stdin" | {{.GO_APP_PATH}} api run
