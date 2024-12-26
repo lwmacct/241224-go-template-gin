@@ -18,5 +18,5 @@ func Cmd() *m_cmd.Ts {
 func run(cmd *cobra.Command, args []string) {
 	_ = map[string]any{"cmd": cmd, "args": args}
 	m_log.Info(m_log.H{"msg": "app.Flag", "data": app.Flag})
-
+	New().Run()
 }
