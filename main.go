@@ -9,8 +9,8 @@ import (
 	"github.com/lwmacct/241224-go-template-gin/app/start"
 	"github.com/lwmacct/241224-go-template-gin/app/test"
 	"github.com/lwmacct/241224-go-template-gin/app/version"
-	"github.com/lwmacct/241224-go-template-pkgs/m_cmd"
-	"github.com/lwmacct/241224-go-template-pkgs/m_log"
+	"github.com/lwmacct/241224-go-template-pkgs/pkgs/m_cmd"
+	"github.com/lwmacct/241224-go-template-pkgs/pkgs/m_log"
 )
 
 var mc *m_cmd.Ts
